@@ -1,0 +1,75 @@
+<div class="box">
+    <table>
+    <td>Tahun Ajaran</td>
+                <td>:</td>
+                <td>
+                    <input type="hidden" name="id" value="<?php echo $d['id']; ?>">
+                    <input type="text" name="thn_ajaran" class="input-control" value="2024/2025" readonly  value="<?php echo $d['thn_ajaran']; ?>">
+            <tr>
+                <td>Jurusan</td>
+                <td>:</td>
+                <td>
+                    <select class="input-control" name="jurusan"  value="<?php echo $d['jurusan']; ?>">
+                        <option value="">Pilih</option>
+                        <option value="Akuntansi dan Keuangan Lembaga">Akuntansi dan Keuangan Lembaga</option>
+                        <option value="Bisnis Daring dan Pemasaran">Bisnis Daring dan Pemasaran</option>
+                        <option value="Perhotelan">Perhotelan</option>
+                        <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                        <option value="Teknik Kendaraan Ringan dan Otomotif">Teknik Kendaraan Ringan dan Otomotif</option>
+                        <option value="Teknik Pengelasan">Teknik Pengelasan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nama"  class="input-control"  value="<?php echo $d['nama']; ?>">
+                </td>
+            </tr>
+            <tr>
+                <td>Tempat,Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="ttl" class="input-control"  value="<?php echo $d['ttl']; ?>">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" class="input-control" value="Pria"  value="<?php echo $d['jk']; ?>">Laki-laki &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="jk" class="input-control" value="Wanita"  value="<?php echo $d['jk']; ?>">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <select class="input-control" name="agama"  value="<?php echo $d['agama']; ?>">
+                        <option value="">Pilih</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                   <textarea class="input-control" name="alamat"  value="<?php echo $d['alamat']; ?>"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                   <input type="submit" name="submit" class="btn-daftar" value="Daftar Sekarang">
+                </td>
+            </tr>
+        </table>
+    </div>
